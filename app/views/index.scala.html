@@ -1,0 +1,12 @@
+@(message: String)(implicit req: RequestHeader)
+
+@main("Hi!") {
+    <div class="top_nav"></div>
+    <div class="left_sidebar">@sidebar.left()</div>
+    <div class="right_sidebar">@sidebar.right()</div>
+
+
+    <h1>ETQ</h1>
+    <section class="search">@search(req)</section>
+}
+
